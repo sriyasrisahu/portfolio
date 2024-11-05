@@ -1,0 +1,300 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    
+    background-color: #003152;
+    
+
+    font-family: '\f26e';
+
+    color: beige;
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container h1 {
+    cursor: pointer;
+    color: green;
+    margin-left: 10px;
+    height: 100%;
+    background-color: #e0e0e0;
+    border-radius: 75%;
+}
+
+.container h1:hover {
+    color: darkcyan;
+}
+
+
+.navbar ul li {
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    padding: 4px;
+    color: #b7ebb2;
+    text-decoration: none;
+    transition: 0.2s;
+
+}
+
+.navbar ul li a:hover {
+    box-shadow: 0 3px #e0e0e0 inset, 0 3px #e0e0e0 inset, 0 3px #e0e0e0, 0 3px #e0e0e0 inset;
+    color: aqua;
+}
+
+
+#photho {
+    height: 400px;
+    width: 300px;
+    border-radius: 50%;
+    border: 4px solid beige;
+    margin-left: 600px;
+    margin-top: 45px;
+    background-image: url(sriya.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#photho :hover{
+    background-color: #0056b3;
+}
+ 
+@media only screen and (max-width:1200px) and (min-width:300px) {
+    #photho {
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    
+
+
+}
+
+#home {
+    font-size: 40px;
+    margin-left: 600px;
+    margin-bottom: 150px;
+}
+
+#home:hover {
+    color: darksalmon;
+}
+@media only screen and (min-width:300px) and (max-width:1200px)  {
+    #home{
+        margin-left: 40px;
+        
+    }
+}
+
+
+.Skill {
+    color: #ffffff;
+    background-color: #0056b3;
+    padding: 80px;
+    font-size: 23px;
+    height: 100%;
+    
+
+
+}
+
+/* .Skills h1 {
+    margin-bottom: 50px;
+
+} */
+
+.about {
+    padding: 230px;
+    font-size: 20px;
+    height: 100%;
+    background-color: #52b2bf;
+}
+
+.about:hover {
+    color: yellowgreen;
+
+}
+
+/* Social Links */
+.social-links {
+padding: 20px;
+    background-color: black;
+}
+
+.social-links .btn {
+    background-color:#ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.social-links .btn:hover {
+    background-color: #0056b3;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:1200px)  {
+   .social-links  { margin-right: 0px;
+}
+}
+
+
+
+.education {
+    font-size: 30px;
+    background-color: #4f97a3;
+    margin: 40px;
+    margin-top: 90px;
+    padding: 200px;
+
+}
+
+
+.contact {
+    background-color: #0e4d92;
+    padding: 200px;
+    height: 100%;
+
+    margin-bottom: 10px;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    /* Mobile layout changes */
+    .navbar ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    #photho {
+        text-align: center;
+    }
+
+    #home {
+        text-align: center;
+    }
+
+    .about, .skills, .education, .contact {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .social-links .container {
+        text-align: center;
+    }
+
+    .social-links a {
+        margin: 5px;
+    }
+
+    .progress {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact input[type="text"], .contact input[type="email"], .contact textarea {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact input[type="submit"], .contact input[type="reset"] {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+}
+
+/* For tablets and larger mobile devices */
+@media (max-width: 1024px) {
+    .navbar ul {
+        text-align: center;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+
+    .about, .skills, .education, .contact {
+        padding: 30px;
+    }
+
+    .contact input[type="text"], .contact input[type="email"], .contact textarea {
+        width: 70%;
+    }
+}
+
+/* For desktop screens */
+@media (min-width: 1025px) {
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 0 20px;
+    }
+
+    #home {
+        padding: 50px;
+    }
+
+    .about, .skills, .education, .contact {
+        padding: 50px;
+        text-align: left;
+    }
+
+    .social-links {
+        text-align: left;
+    }
+
+    .contact input[type="text"], .contact input[type="email"], .contact textarea {
+        width: 50%;
+    }
+
+    .contact input[type="submit"], .contact input[type="reset"] {
+        width: 50%;
+    }
+}
+
+/* For very large screens (high resolution) */
+@media (min-width: 1200px) {
+    #home {
+        font-size: 1.5em;
+    }
+
+    .about, .skills, .education, .contact {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
